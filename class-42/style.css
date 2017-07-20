@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Changa:300,400,700,800|Roboto:300,400,700,900');
+/* Base CSS */
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+   
+}
+
+
+body { 
+font-family: 'Roboto', sans-serif;
+line-height: 1.8;
+font-weight:400;
+font-size: 15px;
+max-height: 100%;
+}
+
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+
+
+.single-product {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.single-product-image-wrap {
+    background: #f1f1f1 none repeat scroll 0 0;
+    display: table;
+    height: 300px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.single-product-image-wrap-table {
+    display: table-cell;
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+.product-description {
+    text-align: center;
+}
+.product-description p.product-prices {
+    color: #f64b4d;
+    font-size: 40px;
+    font-weight: 800;
+}
+.product-description a h3 {
+    font-size: 18px;
+}
+.product-description a {
+    color: #5c5c5c;
+}
+.product-ovely-link {
+    height: 100%;
+    left: 0;
+    opacity: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.product-ovely-link {
+    padding: 30px 15px;
+}
+.product-ovely-link .col-md-8 a {
+    display: inline-block;
+    margin: 0 11px 0 0;
+}
+.product-ovely-link .col-md-4 a {
+    border: 2px solid #de5f58;
+    color: #fff;
+    height: 50px;
+    line-height: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+}
+.product-ovely-link a {
+    display: inline-block;
+    font-size: 18px;
+}
+
+
+
+.our-product {
+    padding: 100px 0;
+}
+.title {
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+.single-product::after {
+    background:url(./assets/img/international.jpg) no-repeat scroll #222222 ; background-size: cover;
+    content: "";
+    height: 100%;
+    left: 0;
+    margin-top: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 1s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: -1;
+}
+.row-product-ovely-link {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    transition: all 1s ease 0s;
+    visibility: hidden;
+    width: 100%;
+}
+.row-product-ovely-link a {
+    display: inline-block;
+    padding: 7px;
+}
+.overlink-right a {
+    border: 2px solid red;
+    color: #fff;
+    height: 45px;
+    line-height: 25px;
+    text-align: center;
+    width: 45px;
+}
+.single-product.single-product:hover::after {
+    height: 120%;
+    opacity: .9;
+    top: -10%;
+    visibility: visible;
+}
+.single-product .single-product-image-wrap:hover {
+    background: transparent none repeat scroll 0 0;
+}
+.single-product:hover .single-product-image-wrap {
+    background: transparent none repeat scroll 0 0;
+}
+.single-product:hover .row-product-ovely-link {
+    opacity: 1;
+    visibility: visible;
+}
+
